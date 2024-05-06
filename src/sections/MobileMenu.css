@@ -1,0 +1,59 @@
+/* Mobile menu*/
+.bm-item-list{
+  display: block;
+  background-color: white !important;
+  padding: 20px;
+  font-family: Kantumruy Pro;
+}
+
+.sideMenuLogo{
+  position: relative;
+  margin-bottom: 60px;
+  display: flex !important;
+  justify-content: center;
+}
+.sideMenuLogo img{
+  width: 60px;
+  margin: 10px auto auto auto;
+}
+
+.sideMenuNav a{
+  display: flex !important;
+  justify-content: center;
+  color:black;
+  text-decoration: none;
+  margin-bottom: 30px;
+  font-size: 17px;
+}
+
+.sideMenuDownload{
+  background-color: var(--grey);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+.sideMenuDownload h2{
+  font-family: Almarai;
+  font-size: 20px;
+  margin: 5px 0px 15px 0px;
+  color:white;
+}
+.sideMenuDownload>div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sideMenuDownload a{
+  border-radius: 10px;
+  width: calc(50% - 5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  box-shadow: inset 0 0 0 4px white;
+}
+
+.bm-menu .social-links{
+margin-top: 50px;
+  flex-direction: column;
+}
