@@ -213,6 +213,7 @@
   }
 
   #service{
+    padding-top: 0px;
     & .col-md-4{
       margin-bottom: 20px !important;
 
@@ -477,7 +478,7 @@
 
 
 .screenshot{
-  padding: 30px 0px 50px 0px;
+  padding: 30px 0px 80px 0px;
 
   & img{
     max-height: 600px;
@@ -491,6 +492,31 @@
   }
   & .title *{
     color:white !important;
+  }
+  
+  & .slick-dots  {
+    bottom:-40px;
+    & li {
+      width: 10px;
+      height: 10px;
+      opacity: 0.4;
+      transition: 0.3s;
+      &.slick-active{
+        opacity: 1;
+      }
+      &:hover button{
+        background-color: var(--blue-main) !important;
+      }
+      & button{
+        width: 10px;
+        height: 10px;
+        background-color: var(--blue-main);
+        border-radius: 200px;
+       &:before{
+        display:none;
+       }
+      }
+    }
   }
 }
 
@@ -603,7 +629,6 @@ max-width: 700px;
 
 #site .header-centered, #site .header-centered .link-horizontal{
   justify-content: flex-start;
-  padding-top: 70px ;
   @media(max-width:766px){
     padding-top: 10px ;
   }
