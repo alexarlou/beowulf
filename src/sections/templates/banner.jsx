@@ -16,7 +16,7 @@ const Banner = () => (
                                 </div>
                                 <div className="header-sub-text">
                                     <p className="text-white p-light">Beowulf is a data science company focused on solving high impact problems by integrating national strategic analysis, observational research, cultural intelligence & machine learning.</p>
-                                    <DefaultButton link='#introduction' name='LEARN MORE' align='center' color='light'/>
+                                    {/* <DefaultButton link='#introduction' name='LEARN MORE' align='center' color='light'/> */}
                                 </div>
 
                                 {/* <div className="link-horizontal">

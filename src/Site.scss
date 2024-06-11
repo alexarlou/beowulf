@@ -201,12 +201,17 @@
   // }
 
   .header .bg.app1-header{
-    background-image: url(/header-2-bg.png);
+    background-image: url(/header-3-bg.png);
+    background-size: cover;
   }
   .header .animation-circle-inverse{
-    left:calc(50% - 100px);
+    left:calc(50% - 50px);
     top:unset;
     bottom: 0;
+    & i{
+      height: 100px;
+      width: 100px;
+    }
   }
   .download .center-mobile{
     min-height: unset;
@@ -224,7 +229,7 @@
     }
 
     & .service{
-
+      padding: 30px 20px 40px 20px;
       margin: 0px !important;
       transition: 0.3s;
       background-color: var(--primary);
@@ -587,10 +592,11 @@
   max-width: 700px;
   & * {
     font-weight: 300 !important;
-    line-height: 50px !important;
+    font-size: 40px !important;
+    line-height: 45px !important;
     @media(max-width:900px){
-      font-size: 24px !important;
-      line-height: 30px !important;
+      font-size: 20px !important;
+      line-height: 25px !important;
     }
    
   }
@@ -622,8 +628,7 @@ max-width: 700px;
 
 .app1-header.bg{
   position: relative !important;
-  max-height: 800px;
-  min-height: 600px;
+  max-height: 350px;
  
 }
 
