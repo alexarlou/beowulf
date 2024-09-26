@@ -8,13 +8,12 @@ function ContactForm() {
     if (window._fd && typeof window._fd.scan === 'function') {
       window._fd.scan();
     }
-  }, []); 
-
+  }, []);
 
   const initialFormData = {
     name: '',
     email: '',
-    message: '', 
+    message: '',
   };
 
   const [formData, setFormData] = useState(initialFormData);
@@ -25,28 +24,17 @@ function ContactForm() {
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
-  
-    
-      setFormData({
-        ...formData,
-        [name]: value
-      });
-
+    setFormData({
+      ...formData,
+      [name]: value
+    });
   };
-
- 
-
-
-
-
-
-
 
 
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    if(formData.name === '' || formData.email === '' || formData.message === ''){
+    if (formData.name === '' || formData.email === '' || formData.message === '') {
       return;
     }
 
@@ -59,7 +47,6 @@ function ContactForm() {
     formDataObj.append('email', formData.email);
     formDataObj.append('message', formData.message);
 
-  
     try {
       const response = await fetch('https://api.form-data.com/f/lp6t7nvovr73ssa8xslhw', {
         method: 'POST',
@@ -68,7 +55,7 @@ function ContactForm() {
           "Content-Type": "application/json",
         },
       });
-  
+
       if (response.ok) {
         setFormData(initialFormData);
         setSuccess(true);
@@ -83,10 +70,6 @@ function ContactForm() {
     }
   };
 
-
-
-
-  
 
   return (
     <form onSubmit={handleSubmit}>
@@ -131,15 +114,15 @@ function ContactForm() {
       <input type="hidden" name="_fd" value="0" className="form-data-marker" />
 
       <button type="submit">
-        {isFetching ? 
+        {isFetching ?
           <Oval
-          visible={true}
-          height="20"
-          width="20"
-          color="white"
-          ariaLabel="oval-loading"
-          wrapperStyle={{}}
-          wrapperClass=""
+            visible={true}
+            height="20"
+            width="20"
+            color="white"
+            ariaLabel="oval-loading"
+            wrapperStyle={{}}
+            wrapperClass=""
           />
           :
           <>Send <img src={arrow} alt="" /></>

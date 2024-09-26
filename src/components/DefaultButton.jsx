@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 
 function DefaultButton({link, name, align, color}) {
 

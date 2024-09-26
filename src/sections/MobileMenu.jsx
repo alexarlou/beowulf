@@ -3,12 +3,12 @@ import Socials from '../sections/Socials';
 import { Link } from 'react-router-dom';
 import './MobileMenu.css'
 
-function MobileMenu({mobileMenuOpened, setMobileMenuOpened}) {
+function MobileMenu({ mobileMenuOpened, setMobileMenuOpened }) {
 
   const handleStateChange = (state) => {
     setMobileMenuOpened(state.isOpen);
   };
-  
+
 
   const handleNavLinkClick = (event) => {
     event.preventDefault();
@@ -23,7 +23,7 @@ function MobileMenu({mobileMenuOpened, setMobileMenuOpened}) {
 
 
   return (
-    <Menu pageWrapId={ "site" } isOpen={mobileMenuOpened} onStateChange={handleStateChange} width={ 260 } customBurgerIcon={ false }>
+    <Menu pageWrapId={"site"} isOpen={mobileMenuOpened} onStateChange={handleStateChange} width={260} customBurgerIcon={false}>
 
       <div className="sideMenuLogo">
         <Link to="/">
@@ -40,22 +40,6 @@ function MobileMenu({mobileMenuOpened, setMobileMenuOpened}) {
         <a href="#screenshots" onClick={handleNavLinkClick}>Screenshots</a>
         <a href="#contact" onClick={handleNavLinkClick}>Contact</a>
       </div>
-
-
-      {/* <div className='sideMenuDownload'>
-        <h2>Available On</h2>
-        <div>
-          <a  href="https://play.google.com/store/apps/details?id=com.bitmotive.onefm_flutter&hl=en-US&pli=1">
-            <img src="/googleplayicon.svg" alt="" />
-          </a>
-          <a  href="https://testflight.apple.com/join/tLyrTOmO">
-            <img src="/appstoreicon.svg" alt="" />
-          </a>
-
-        </div>
-      </div> */}
-
-      {/* <Socials color="black"/> */}
 
     </Menu>
   );

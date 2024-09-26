@@ -16,12 +16,12 @@ function HomePage() {
     <>
       <BannerSection />
       <ServicesSection />
-      <ExpertSection/>
-      <BuildSection/>
+      <ExpertSection />
+      <BuildSection />
       <FeaturesSection />
       <ScreenshotSection />
       <DownloadSection />
-      <FormSection/>
+      <FormSection />
     </>
   );
 }

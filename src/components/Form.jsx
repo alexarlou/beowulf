@@ -4,9 +4,7 @@ import { Oval } from 'react-loader-spinner';
 
 function Form() {
 
-
   const saved = localStorage.getItem('submitted');
-
   const [isSuccess, setSuccess] = useState(() => {
     return saved ? JSON.parse(saved) : false;
   });
@@ -25,7 +23,6 @@ function Form() {
   }, [isSuccess])
 
 
-
   useEffect(()=>{
     if (isSuccess === true) {
       setModalOpened(true);
@@ -40,10 +37,6 @@ function Form() {
       document.body.classList.remove('no-scroll');
     }
   }
-
-
-
-
 
 
   useEffect(() => {
@@ -63,7 +56,6 @@ function Form() {
   const [isError, setError] = useState(false);
   const [isFetching, setFetching] = useState(false);
 
-
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
   
@@ -79,13 +71,6 @@ function Form() {
       });
     }
   };
-
- 
-
-
-
-
-
 
 
 
@@ -128,9 +113,6 @@ function Form() {
       setFetching(false);
     }
   };
-
-
-
 
   
 
@@ -209,11 +191,8 @@ function Form() {
           <>SIGN UP NOW <img src={arrow} alt="" /></>
         }
       </button>
-
       {isSuccess && <div className='alert success'>Your application has been sent</div>}
       {isError && <div className='alert error'>An error has occured, try again later</div>}
-
-
     </form>
   )
 }

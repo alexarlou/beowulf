@@ -8,33 +8,27 @@ import MobileMenu from './sections/MobileMenu';
 import NotFoundPage from './pages/not-found/NotFoundPage';
 import Footer from './sections/Footer';
 
-
-
-
-
 function Site() {
 
   const [mobileMenuOpened, setMobileMenuOpened] = useState(false);
-  
 
   return (
     <BrowserRouter>
-        <MobileMenu mobileMenuOpened={mobileMenuOpened} setMobileMenuOpened={setMobileMenuOpened} />
-        <div id="site">
-          <div id="siteInner">
+      <MobileMenu mobileMenuOpened={mobileMenuOpened} setMobileMenuOpened={setMobileMenuOpened} />
+      <div id="site">
+        <div id="siteInner">
 
-            <HeaderMain setMobileMenuOpened={setMobileMenuOpened} />
+          <HeaderMain setMobileMenuOpened={setMobileMenuOpened} />
 
-            <Routes>
-              <Route path="/" element={<HomePage />}/>
-              <Route path="*" element={<NotFoundPage />} /> 
-            </Routes>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="*" element={<NotFoundPage />} />
+          </Routes>
 
+          <Footer />
 
-            <Footer/>
-
-          </div>
         </div>
+      </div>
     </BrowserRouter>
   );
 }

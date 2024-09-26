@@ -16,6 +16,7 @@ const Video = () => {
     const prevImage = () => {
         setActiveImage((prev) => (prev - 1 + images.length) % images.length);
     };
+    
     return (
         <section className="app1 videos bg-theme">
             <Container>

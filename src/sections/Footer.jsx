@@ -15,9 +15,7 @@ function Footer() {
 
   return (
     <div className="footerOuter">
-
       <footer id="mainFooter" >
-        
         <div className="container">
 
           <div className="nav-logo">
@@ -40,7 +38,7 @@ function Footer() {
       </footer>
     </div>
 
-    );
+  );
 }
 
 export default Footer
