@@ -51,12 +51,12 @@ const teamData = [
   {
     photo: '/team4.jpg',
     title: 'Hon. Chris Miller',
-    details: 'Exectutive Advisor',
+    details: 'Executive Advisor',
   },
   {
     photo: '/team5.jpg',
     title: 'Theo Schlossnagle',
-    details: 'Exectutive Advisor',
+    details: 'Executive Advisor',
     linkedin: 'https://www.linkedin.com/in/postwait'
   },
 ]
