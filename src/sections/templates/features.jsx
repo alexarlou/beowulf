@@ -61,7 +61,7 @@ const Features = () => {
                   <h3 className="">Advanced Inventory Management At Your Fingertips</h3>
                 </div>
                 <div className="format-sub-text">
-                  <p className="about-para">Stay connected with expenditures, receipt, and request reports no matter where you are with our application. Access your inventory, receive updates, and make informed decisions directly from your mobile device. Our app ensures you have the necessary tools at your fingertips, offering full functionality and seamless integration with our desktop platforms.</p>
+                  <p className="about-para">Stay connected with expenditures, receipts, and request reports no matter where you are with our application. Access your inventory, receive updates, and make informed decisions directly from your mobile device. Our app ensures you have the necessary tools at your fingertips, offering full functionality and seamless integration with our desktop platforms.</p>
                   <DefaultButton link='#contact' name='REQUEST A DEMO' align='left' />
                 </div>
 
