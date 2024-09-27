@@ -13,7 +13,7 @@ const Form = () => (
           <h2 className="title-text text-capitalize text-center">Contact Us</h2>
         </div>
 
-        <div style={{ margin: '40px auto 0px auto', maxWidth: '400px' }}><p>If you have any questions please let us know.</p></div>
+        <div style={{ margin: '40px auto 0px auto', maxWidth: '400px' }}><p>If you have any questions, please let us know.</p></div>
       </div>
     </Col>
 

@@ -51,12 +51,12 @@ const teamData = [
   {
     photo: '/team4.jpg',
     title: 'Hon. Chris Miller',
-    details: 'Exectutive Advisor',
+    details: 'Executive Advisor',
   },
   {
     photo: '/team5.jpg',
     title: 'Theo Schlossnagle',
-    details: 'Exectutive Advisor',
+    details: 'Executive Advisor',
     linkedin: 'https://www.linkedin.com/in/postwait'
   },
 ]
@@ -75,7 +75,7 @@ const Expert = () => (
               <h2 className="title-text text-capitalize text-center">Our Great Team</h2>
             </div>
 
-            <div style={{ margin: '40px auto 0px auto', maxWidth: '700px' }}><p>Our team is comprised of software development and ERP inductry veterans alongside U.S. special operations veterans to uniquely address critical gaps in DOD and commercial logistics. The diverce skill set enables us to offer innovative solutions, bringing inductry knowledge with specialized insights to enhance efficiency and accountability in both goverment and commercial applications.</p></div>
+            <div style={{ margin: '40px auto 0px auto', maxWidth: '700px' }}><p>Our team is comprised of software development and ERP industry veterans alongside U.S. special operations veterans to uniquely address critical gaps in DOD and commercial logistics. The diverse skill set enables us to offer innovative solutions, bringing industry knowledge with specialized insights to enhance efficiency and accountability in both government and commercial applications.</p></div>
           </div>
         </Col>
 

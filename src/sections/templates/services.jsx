@@ -50,7 +50,7 @@ const Services = () => (
               </div>
           </Col>
       </Row>
-      <div style={{margin:'40px auto 0px auto', maxWidth:'700px', textAlign:'center'}}><p>Bulldog is a tactical to operational reporting system providing unit inventory accountability, and predictive analysis across all classes of supply. The system is comprised of a an end user application accessible via mobile devices or laptops and an administrative/reporting dashboard for real-time analysis and predictive modeling</p></div>
+      <div style={{margin:'40px auto 0px auto', maxWidth:'700px', textAlign:'center'}}><p>Bulldog is a tactical to operational reporting system providing unit inventory accountability, and predictive analysis across all classes of supply. The system is comprised of an end user application accessible via mobile devices or laptops and an administrative/reporting dashboard for real-time analysis and predictive modeling.</p></div>
     </Container>
 </section>
 );
